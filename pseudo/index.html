@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psueso Element</title>
+
+    <style>
+        h1 {
+            margin-bottom: 80px;   
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            width: 80%;
+            position: relative;
+            margin-left: auto;
+            margin: right auto;
+            position: relative;
+        }
+        h1::before {
+            content: "";
+            width: 100px;
+            height: 1px;
+            background-color: brown;
+            display: inline-block;
+            position: absolute;
+            top: 35px;
+            left: -120px;
+
+          }
+
+          h1::after {
+            content: "";
+            width: 100px;
+            height: 1px;
+            background-color: brown;
+            display: inline-block;
+            position: absolute;
+            top: 35px;
+            right: -10px;
+
+          }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Displays Before and After</h1>
+    
+</body>
+</html>
